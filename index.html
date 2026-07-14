@@ -47,42 +47,69 @@ body{background:linear-gradient(#bfe8ff,#eefbff);font-family:Arial,sans-serif;ov
   height:35px;
 }
 .paper{
-  width:min(90vw,820px);
-  aspect-ratio:auto;
-  margin:0 auto;
-  background:#fffef8;
-  border-radius:12px;
-  padding:55px;
-  box-shadow:0 10px 25px rgba(0,0,0,.15);
+    width:min(900px,90vw);
+    margin:0 auto;
+    background:#fffef8;
+    border-radius:14px;
+    padding:55px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
 
-  background-image:
-  repeating-linear-gradient(
-    #fffef8 0,
-    #fffef8 31px,
-    #d8ecff 31px,
-    #d8ecff 32px
-  );
+    background-image:
+    repeating-linear-gradient(
+        #fffef8 0,
+        #fffef8 31px,
+        #d8ecff 31px,
+        #d8ecff 32px
+    );
 }
-@media(max-width:600px){
+@media (max-width:600px){
 
-  .paper{
-    width:92vw;
-    aspect-ratio:4 / 3;
-    padding:25px;
-  }
+    body{
+        overflow-x:hidden;
+    }
 
-  #letter{
-    font-size:13px;
-    line-height:1.2;
-  }
+    #content{
+        padding:20px 10px;
+    }
 
-}
-#letter{
-  font-family:'Shadows Into Light',cursive;
-  font-size:clamp(22px,3.2vw,32px);
-  line-height:1.15;
-  white-space:pre-line;
-  text-align:justify;
+    .music{
+        width:90%;
+        max-width:300px;
+        margin-bottom:18px;
+    }
+
+    .music h2{
+        font-size:16px;
+    }
+
+    .music p{
+        font-size:12px;
+    }
+
+    .music audio{
+        height:32px;
+    }
+
+    .paper{
+
+        width:96vw;
+
+        max-width:none;
+
+        padding:25px 22px;
+
+        border-radius:10px;
+
+        min-height:55vw;
+
+    }
+
+    #letter{
+    font-family:'Shadows Into Light',cursive;
+    font-size:clamp(22px,3vw,32px);
+    line-height:1.15;
+    white-space:pre-line;
+    text-align:justify;
 }
 
 </style></head><body>
